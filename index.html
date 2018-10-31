@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+  <title>Ryan Blau</title>
+  <meta name="description" content="Ryan Blau's Portfolio Page">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet"></head>
+
+<body>
+    <main>
+    <nav class="sidebar box">
+        <ul>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item"><a href="#">Work</a></li>
+            <li class="nav-item"><a href="#">Git</a></li>
+            <li class="nav-item"><a href="#">Photos</a></li>
+            <li class="nav-item"><a href="#">Tweets</a></li>
+            <li class="nav-item"><a href="#">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <div class="content box">
+        <header class="inner-wrapper">
+            <div class="img-div">
+                <img class="profile" src="profile.PNG" alt="Picture of Ryan Blau">
+            </div>
+            <div class="name">
+                <p id="name">Ryan Blau</p>
+                <p id="title">Front-end Dev</p>
+            </div>
+            <a id="menu" class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+                </svg>
+            </a>
+        </header>
+        <div class="mobile-name">
+            <p id="name">Ryan Blau</p>
+            <p id="title">Front-end Dev</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Blog</a></li>
+                <li class="nav-item"><a href="#">Work</a></li>
+                <li class="nav-item"><a href="#">Git</a></li>
+                <li class="nav-item"><a href="#">Photos</a></li>
+                <li class="nav-item"><a href="#">Tweets</a></li>
+                <li class="nav-item"><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <picture class="picture">
+            <source srcset="city-small.png" media="(max-width: 400px)" alt="Picture of a city">
+            <source srcset="new-city.png" alt="Picture of a city">
+            <img src="new-city.png" alt="Picture of a city">
+        </picture>
+        <div class="featured-work">
+            <p id="featured">Featured Work</p>
+        </div>
+        <section class="img-gallery">
+            <figure id="first-pic"><img src="dummy.jpg">
+            <figcaption>www.github.com</figcaption>
+            </figure>
+            <figure id="second-pic"><img src="signature.png">
+            <figcaption>www.ryanblau.com</figcaption>
+            </figure>
+            <figure id="last-pic"><img src="dummy1.jpg">
+            <figcaption>www.myapp.com</figcaption>
+            </figure>
+        </section>
+    </div>
+    </main>
+    <script>
+        function classToggle() {
+            const navs = document.querySelectorAll('.menu')
+            
+            navs.forEach(nav => nav.classList.toggle('menu__ToggleShow'));
+            }
+            document.querySelector('.hamburger')
+            .addEventListener('click', classToggle);
+    </script>
+</body>
+</html>
