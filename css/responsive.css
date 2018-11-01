@@ -6,7 +6,7 @@
     }
     .nav-item {
         border-bottom: 1px solid whitesmoke;
-        line-height: 24px;
+        line-height: 1rem;
     }
     .menu ul {
         padding: 0px;
@@ -48,13 +48,18 @@
         margin: 0;
         padding: 0;
     }
-    .content, .picture, .inner-wrapper, .img-gallery {
+    .content, 
+    .picture, 
+    .inner-wrapper, 
+    .img-gallery {
         width: 100%;
         margin: 0;
         padding: 0;
         position: relative;
     }
-    #first-pic img, #second-pic img, #last-pic img {
+    #first-pic img, 
+    #second-pic img, 
+    #last-pic img {
         width: 100%;
         height: auto;
     }
@@ -84,7 +89,9 @@
 }
 
 @media screen and (min-width: 551px) {
-    .hamburger, .mobile-name, .menu {
+    .hamburger, 
+    .mobile-name, 
+    .menu {
         display: none;
     }
 }

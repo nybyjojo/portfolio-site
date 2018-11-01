@@ -1,4 +1,6 @@
-html, body, main {
+html, 
+body, 
+main {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -30,9 +32,9 @@ html, body, main {
     display: inline-block;
     width: 100%;
     text-align: center;
-    line-height: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     text-transform: uppercase;
   }
 
@@ -118,7 +120,11 @@ picture {
     margin-right: 3em;
     justify-content: space-between;
     overflow: auto;
- }
+}
+
+.img-gallery a {
+    color: black;
+}
 .img-gallery img {
     height: 100px;
     width: 150px;
