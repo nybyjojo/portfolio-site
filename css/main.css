@@ -18,18 +18,21 @@ main {
 .sidebar {
     height: 100%;
     width: 15%;
+    display: inline-flex;
+    max-height: 750px;
 }
 
 .sidebar ul {
     padding-inline-start: 0px;
+    width: 100%;
     margin-top: auto;
     margin-bottom: auto;
-    padding-right: 1.5em;
+    text-align: center;
+    list-style-type: none;
 }
 
 .nav-item {
     box-sizing: border-box;
-    display: inline-block;
     width: 100%;
     text-align: center;
     line-height: 1.5rem;
@@ -49,6 +52,7 @@ main {
    display: flex;
    flex-wrap: wrap;
    width: 85%;
+   max-height: 750px;
 }
 
 .inner-wrapper {
@@ -69,13 +73,13 @@ main {
     text-align: right;
 }
 
-#name {
+.name-heading {
     font-size: 50px;
     margin-bottom: 0;
     margin-top: .5em;
 }
 
-#title {
+.title-subheading {
     font-size: 25px;
     margin-top: 0;
 }
@@ -85,24 +89,20 @@ main {
     padding: .75em;
 }
 
-picture {
-    display: block;
-}
 .picture {
     width: 100%;
     margin-right: 3em;
-    display: block;
 }
 
 .picture img {
     width: 100%;
     padding-top: 1em;
-    display: block;
 }
 
 .featured-work {
     padding-left: 1em;
     height: 50px;
+    width: 100%;
 }
 
 .featured-work p {
@@ -111,15 +111,23 @@ picture {
 }
 
 #featured {
-    font-size: 30px;
+    font-weight: normal;
+    width: 100%;
+}
+
+.figures {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
 }
 
 .img-gallery {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin-right: 3em;
-    justify-content: space-between;
-    overflow: auto;
+    
 }
 
 .img-gallery a {

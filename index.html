@@ -3,12 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>Ryan Blau</title>
   <meta name="description" content="Ryan Blau's Portfolio Page">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+</head>
 
 <body>
     <main>
@@ -29,8 +30,8 @@
                 <img class="profile" src="img/profile.PNG" alt="Picture of Ryan Blau">
             </div>
             <div class="name">
-                <p id="name">Ryan Blau</p>
-                <p id="title">Front-end Dev</p>
+                <p class="name-heading">Ryan Blau</p>
+                <p class="title-subheading">Front-end Dev</p>
             </div>
             <a id="menu" class="hamburger">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -39,8 +40,8 @@
             </a>
         </header>
         <div class="mobile-name">
-            <p id="name">Ryan Blau</p>
-            <p id="title">Front-end Dev</p>
+            <p class="name-heading">Ryan Blau</p>
+            <p class="title-subheading">Front-end Dev</p>
         </div>
         <div class="menu">
             <ul>
@@ -58,19 +59,21 @@
             <source srcset="img/new-city.png">
             <img src="img/new-city.png" alt="Picture of a city">
         </picture>
-        <div class="featured-work">
-            <p id="featured">Featured Work</p>
-        </div>
         <section class="img-gallery">
-            <figure id="first-pic"><img src="img/dummy.jpg">
-            <figcaption><a href="www.github.com">Github</a></figcaption>
-            </figure>
-            <figure id="second-pic"><img src="img/signature.png">
-            <figcaption><a href="www.ryanblau.com">My Website</a></figcaption>
-            </figure>
-            <figure id="last-pic"><img src="img/dummy1.jpg">
-            <figcaption><a href="www.myapp.com">My App</a></figcaption>
-            </figure>
+             <div class="featured-work">
+                <h1 id="featured">Featured Work</h1>
+            </div>
+            <div class="figures">
+                <figure id="first-pic"><img src="img/dummy.jpg">
+                <figcaption><a href="www.github.com">Github</a></figcaption>
+                </figure>
+                <figure id="second-pic"><img src="img/signature.png">
+                <figcaption><a href="www.ryanblau.com">My Website</a></figcaption>
+                </figure>
+                <figure id="last-pic"><img src="img/dummy1.jpg">
+                <figcaption><a href="www.myapp.com">My App</a></figcaption>
+                </figure>
+            </div>
         </section>
     </div>
     </main>

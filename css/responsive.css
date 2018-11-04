@@ -3,51 +3,62 @@
         display: none;
         flex-direction: column;
         width: 100%;
+        order: 3;
     }
+
     .nav-item {
         border-bottom: 1px solid whitesmoke;
         line-height: 1rem;
     }
+
     .menu ul {
         padding: 0px;
         margin: 0px;
     }
+
     .sidebar {
         display: none;
     }
-    header {
-        position: absolute;
-    }
+
     .hamburger svg {
         width: 40px;
         padding: 1em;
         cursor: pointer;
+        order:1;
     }
+
     .menu__ToggleShow {
         display: flex;
     }
+
     .name {
         display: none;
     }
+
     .img-div {
         width: 100%;
+        order: 0;
+        display: flex;
+        justify-content: center;
     }
+
     .img-div img {
         height: 200px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 4em;
+        padding-left: 3.5rem;
         padding-right: 0px;
     }
+
     .inner-wrapper {
         height: 200px;
         border-bottom: none;
+        justify-content: none;
     }
+
     body {
         margin: 0;
         padding: 0;
     }
+
     .content, 
     .picture, 
     .inner-wrapper, 
@@ -55,36 +66,55 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        position: relative;
     }
+
+    .picture {
+        order: 10;
+    }
+
+    .featured-work {
+        order: 10;
+    }
+
+    .img-gallery {
+        order: 10;
+    }
+
     #first-pic img, 
     #second-pic img, 
     #last-pic img {
         width: 100%;
         height: auto;
     }
+
     figure {
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
     }
-    #name {
+
+    .name-heading {
         font-size: 35px;
         padding-right: 5px;
     }
-    #title {
+
+    .title-subheading {
         font-size: 20px;
         padding-right: 5px;
     }
+
     .mobile-name {
         text-align: center;
         width: 100%;
         border-bottom: 2px solid black;
+        order: 2;
     }
-    .img-gallery {
+
+    .figures {
         display: flex;
         flex-wrap: wrap;
+        order: 10;
     }
 }
 
